@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #185FA5;
+  padding: 15px 0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.logo strong {
+  color: #FAC775;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #E6F1FB;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.banner {
+  background-color: #E6F1FB;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 32px;
+  color: #042C53;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 16px;
+  color: #0C447C;
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.botao {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.botao-principal {
+  background-color: #EF9F27;
+  color: #412402;
+}
+
+.botao-secundario {
+  background-color: transparent;
+  border: 2px solid #185FA5;
+  color: #185FA5;
+}
+
+.servicos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 26px;
+  color: #042C53;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  width: 280px;
+}
+
+.card .icone {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #042C53;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+footer {
+  background-color: #042C53;
+  padding: 25px 0 15px 0;
+}
+
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu-rodape a {
+  color: #B5D4F4;
+  font-size: 13px;
+}
+
+.contato-rodape {
+  color: #B5D4F4;
+  font-size: 13px;
+}
+
+.copyright {
+  text-align: center;
+  color: #6f92b8;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+}
+ 
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+  }
+}
