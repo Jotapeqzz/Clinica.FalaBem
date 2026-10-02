@@ -4,10 +4,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 a {
@@ -23,11 +34,13 @@ img {
   max-width: 100%;
 }
 
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
 }
+
 
 header {
   background-color: #185FA5;
@@ -43,11 +56,11 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .logo span {
-  color: #fff;
+  color: #f8f6f6;
   font-size: 20px;
 }
 
@@ -57,7 +70,7 @@ header {
 
 .menu {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .menu a {
@@ -68,6 +81,7 @@ header {
 .menu a:hover {
   color: #fff;
 }
+
 
 .banner {
   background-color: #E6F1FB;
@@ -111,6 +125,7 @@ header {
   border: 2px solid #185FA5;
   color: #185FA5;
 }
+
 
 .servicos {
   padding: 60px 20px;
@@ -186,12 +201,12 @@ footer {
 
 .copyright {
   text-align: center;
-  color: #6f92b8;
+  color: #f3f5f6;
   font-size: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 15px;
 }
- 
+
+
 @media (max-width: 700px) {
   .cabecalho {
     flex-direction: column;
