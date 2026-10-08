@@ -208,3 +208,27 @@ footer {
   text-align: center;
   color: #6f92b8;
 }
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .publico {
+    gap: 20px;
+  }
+
+  .publico-item {
+    width: 100px;
+  }
+
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+  }
+}

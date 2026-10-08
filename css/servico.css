@@ -196,8 +196,12 @@ footer {
     justify-content: center;
   }
 
-  .card {
-    flex: 1 1 100%;
+  .publico {
+    gap: 20px;
+  }
+
+  .publico-item {
+    width: 100px;
   }
 
   .rodape {

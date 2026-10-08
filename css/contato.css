@@ -214,8 +214,12 @@ footer {
     justify-content: center;
   }
 
-  .contato-conteudo {
-    flex-direction: column;
+  .publico {
+    gap: 20px;
+  }
+
+  .publico-item {
+    width: 100px;
   }
 
   .rodape {
