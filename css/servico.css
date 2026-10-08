@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-main {
-  flex: 1;
 }
 
 a {
@@ -34,6 +34,10 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -56,7 +60,6 @@ header {
 .logo span {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
 }
 
 .logo strong {
@@ -65,7 +68,7 @@ header {
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .menu a {
@@ -78,42 +81,40 @@ header {
 }
 
 .servicos {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .servicos-topo {
-  text-align: center;
   margin-bottom: 40px;
 }
 
 .etiqueta {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  color: #854F0B;
+  font-weight: bold;
+  font-size: 13px;
   text-transform: uppercase;
-  color: #e2a055;
+  margin-bottom: 8px;
 }
 
 .servicos-topo h1 {
-  font-size: 26px;
-  color: #285b8d;
-  margin-top: 6px;
+  font-size: 28px;
+  color: #042C53;
 }
 
 .servicos-grade {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
-  max-width: 860px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  background-color: #b8d2ec;
-  border: 1px solid #e6e9ee;
-  border-radius: 12px;
-  padding: 20px 22px 24px;
+  flex: 1 1 calc(50% - 20px);
+  background-color: #a3d1f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
 }
 
 .card-icone {
@@ -123,8 +124,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  margin-bottom: 16px;
+  font-size: 22px;
+  margin-bottom: 12px;
 }
 
 .card-icone.azul {
@@ -132,24 +133,23 @@ header {
 }
 
 .card-icone.laranja {
-  background-color: #FDEBD3;
+  background-color: #FAEEDA;
 }
 
 .card h3 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
   color: #042C53;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 13px;
-  color: #55718f;
+  font-size: 14px;
+  color: #666;
 }
 
 footer {
   background-color: #042C53;
-  padding: 25px 0 15px;
+  padding: 25px 0 15px 0;
 }
 
 .rodape {
@@ -167,14 +167,14 @@ footer {
   gap: 15px;
 }
 
-.menu-rodape a,
-.contato-rodape {
+.menu-rodape a {
   color: #B5D4F4;
   font-size: 13px;
 }
 
-.menu-rodape a:hover {
-  color: #fff;
+.contato-rodape {
+  color: #B5D4F4;
+  font-size: 13px;
 }
 
 .copyright {
@@ -196,8 +196,8 @@ footer {
     justify-content: center;
   }
 
-  .servicos-grade {
-    grid-template-columns: 1fr;
+  .card {
+    flex: 1 1 100%;
   }
 
   .rodape {
