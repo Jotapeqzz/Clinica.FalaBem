@@ -204,6 +204,7 @@ footer {
 }
 
 @media (max-width: 700px) {
+
   .cabecalho {
     flex-direction: column;
     gap: 15px;
@@ -212,18 +213,51 @@ footer {
   .menu {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 
-  .publico {
+  .contato {
+    padding: 40px 20px;
+  }
+
+  .contato h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .contato-conteudo {
+    flex-direction: column;
     gap: 20px;
   }
 
-  .publico-item {
-    width: 100px;
+  .formulario {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+  }
+
+  .informacoes {
+    width: 100%;
+    padding: 25px;
   }
 
   .rodape {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
+
+  .menu-rodape {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .copyright {
+    padding: 15px 20px 0;
+  }
+
 }
